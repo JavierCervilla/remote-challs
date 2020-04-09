@@ -6,7 +6,6 @@ def error():
 	print('usage: ' + sys.argv[0] + ' <1-9 squared_rows...>')
 	exit(1)
 
-
 def ending_function(rw_end,rw_st,c_end,c_st):
 	if rw_end <= rw_st  and c_end <= c_st: return ""
 	else: return ", "
