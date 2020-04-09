@@ -26,8 +26,7 @@ def snail(mtx):
 def main():
 	args = len(sys.argv)
 	matrix = []
-	if args < 2  > 21: error()
-	else:
+	if args in range(2, 22):
 		for fila in range(1,args):
 			if len(sys.argv[fila]) != args - 1 or sys.argv[fila].isnumeric() == False: error()
 			else:
@@ -35,6 +34,7 @@ def main():
 				for col in range(len(sys.argv[fila])):
 					if sys.argv[fila][col] != '0': matrix[fila - 1].append(sys.argv[fila][col])
 					else: error()
+	else: error()
 	snail(matrix)
 
 if __name__ == "__main__":
