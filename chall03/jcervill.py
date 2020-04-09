@@ -44,6 +44,7 @@ def main():
 					else: error()
 	else: error()
 	snail(matrix)
+	print()
 
 if __name__ == "__main__":
 	main()
